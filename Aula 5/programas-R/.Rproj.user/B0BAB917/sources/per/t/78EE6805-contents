@@ -1,0 +1,31 @@
+## Programa principal que implementa o m?todo do cotovelo para estimar o
+## número de clusters - exigêcia: atributos numéricos.
+## Observação: este programa invoca o programa R: funcoes.R
+## Autores: David Ferreira Junior e Stanley Oliveira
+
+source ('funcoes.R')			
+			
+
+## Exemplo de matriz
+	matriz=read.csv('../arquivos-aula06/Cluster-Flores.csv', header = T)
+
+matriz <- matriz[,-1] ## Elimina a coluna número 1
+	
+## Numero de clusters a serem avaliados
+	num_clusters = 15
+
+## Resultado
+	## Se nao passar uma seed vai rodar aleatorio
+	result = retorna_clusters (matriz, num_clusters=15, seed = NULL)			
+
+## Plots
+	plota_clusters (result$SS_int_VIZ, result$SS_ext_VIZ)
+
+
+## Para obter os clusters, por exemplo 3
+	numero_de_clusters <- 3
+	clsuter_escolhido <- kmeans(matriz,centers = numero_de_clusters, iter.max = 20)		
+
+	## Clusters
+		clsuter_escolhido$cluster
+		

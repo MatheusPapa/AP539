@@ -1,0 +1,60 @@
+David Ferreira Mojaravscki
+qua., 7 de set. 23:21 (há 2 dias)
+para mim
+
+Professor, boa noite.
+
+Fiz o desafio da última aula, está no google colab no link abaixo com os comentários.
+Utilizei a moda para substituir os valores faltantes/ruídos.
+
+De forma geral, o dataset soybean.arff só tem variável categórica, então foi preciso criar uma lista com os valores esperados (já que está disponível na página WEKA), então utilizei o Label Encoder para transformar o texto em número, e peguei a moda de cada coluna, na sequência faço um filtro somente com os valores que foge ao resultado esperado para cada variável e armazeno o índice, e depois só substituir no índice da coluna o valor não esperado/ruído pela moda.
+
+Não sei se está familiarizado com o colab, é só executar o código.
+
+https://colab.research.google.com/drive/1isb9oaivXpoZjF5X6ooEgXiK6muP63Pa?usp=sharing
+
+
+Professor, um tempo atrás eu organizei um workshop de AI na empresa, e compartilhei alguns documentários, se acreditar que trará algum valor, está abaixo os nomes e os links, alguns estão no youtube e outros nos streams.
+
+---Link dos documentários:
+ 
+
+Youtube:
+
+
+
+The Age of AI - youtube originals
+
+https://www.youtube.com/watch?v=UwsrzCVZAb8&list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc
+
+
+
+Machine Learning – living in the Age of AI
+
+https://www.youtube.com/watch?v=ZJixNvx9BAc
+
+A revista Wired, no you tube, tem o documentário machine learning Living in the Age of AI, que mostra AI aplicada no cotidiano.
+
+ 
+
+The Joy of Stats, é um documentário do professor Hans Rosling
+
+Mostra mais sobre a história da estatística e como ela está presente no nosso mundo.
+
+https://www.youtube.com/watch?v=U5Q9zdIHbRU
+
+ 
+
+A história da matemática
+
+BBC. The Story of Maths. The Language of the Universe
+
+https://www.youtube.com/watch?v=pb0MSMGSIeY
+
+BBC. The Story of Maths. The Genius of the East
+
+https://www.youtube.com/watch?v=p62QItqtkQA
+
+BBC. The Story of Maths .To Infinity and Beyond
+
+https://www.youtube.com/watch?v=dsk31jaCxvE
